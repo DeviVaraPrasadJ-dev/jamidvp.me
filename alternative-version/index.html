@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jami Devi Vara Prasad | Senior DevOps & Cloud Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-prompt">&gt;</span> deviprasad<span class="logo-cursor">_</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Tech Stack</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Key Work</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact" class="btn-primary-sm">Contact Me</a></li>
+      </ul>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="hero" class="hero-section">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="badge-status">
+          <span class="pulse-dot"></span> 6.5+ Years IT Experience • Open for Opportunities
+        </div>
+
+        <!-- Personal Name & Title -->
+        <h1 class="hero-title">
+          Hi, I'm <span class="highlight-gradient">Jami Devi Vara Prasad</span>
+        </h1>
+        <h2 class="hero-role">DevOps &amp; Cloud Infrastructure Engineer</h2>
+
+        <p class="hero-subtitle">
+          Customer-focused DevOps professional with 6.5+ years of hands-on experience in orchestrating 25+ Kubernetes microservices, automating Jenkins CI/CD pipelines, managing AWS Cloud with Terraform (IaC), Ansible, and establishing high-availability production infrastructure.
+        </p>
+
+        <!-- Direct Contact Badges in Header -->
+        <div class="contact-chips">
+          <a href="mailto:jamidevivaraprasad611@gmail.com" class="chip-item">
+            <i class="fa-solid fa-envelope"></i> jamidevivaraprasad611@gmail.com
+          </a>
+          <a href="tel:9281294893" class="chip-item">
+            <i class="fa-solid fa-phone"></i> +91 9281294893
+          </a>
+          <span class="chip-item">
+            <i class="fa-solid fa-location-dot"></i> Hyderabad, India
+          </span>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#experience" class="btn-primary"><i class="fa-solid fa-briefcase"></i> View Experience</a>
+          <a href="#contact" class="btn-secondary"><i class="fa-solid fa-paper-plane"></i> Get In Touch</a>
+        </div>
+        
+        <div class="hero-socials">
+          <a href="mailto:jamidevivaraprasad611@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          <a href="tel:9281294893" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+          <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+
+      <!-- Terminal Preview Card -->
+      <div class="hero-terminal">
+        <div class="terminal-header">
+          <span class="terminal-dot red"></span>
+          <span class="terminal-dot yellow"></span>
+          <span class="terminal-dot green"></span>
+          <span class="terminal-title">bash - deviprasad@fintech-prod: ~</span>
+        </div>
+        <div class="terminal-body">
+          <p><span class="t-prompt">$</span> <span class="t-cmd">whoami</span></p>
+          <p class="t-output">Jami Devi Vara Prasad | DevOps Engineer (6.5+ Yrs Exp)</p>
+          
+          <p><span class="t-prompt">$</span> <span class="t-cmd">kubectl get pods -n reporting-platform</span></p>
+          <p class="t-output-cyan">NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;READY&nbsp;&nbsp;STATUS&nbsp;&nbsp;&nbsp;RESTARTS&nbsp;&nbsp;AGE</p>
+          <p class="t-output">ingestion-service-7d8b9-x2k41&nbsp;&nbsp;1/1&nbsp;&nbsp;&nbsp;&nbsp;Running&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;45d</p>
+          <p class="t-output">perf-calc-engine-5f8c6-m9p12&nbsp;&nbsp;&nbsp;1/1&nbsp;&nbsp;&nbsp;&nbsp;Running&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;45d</p>
+          <p class="t-output">risk-analytics-service-3j9a1&nbsp;&nbsp;&nbsp;1/1&nbsp;&nbsp;&nbsp;&nbsp;Running&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;45d</p>
+          <p class="t-output-green">(25/25 microservices healthy &amp; auto-scaling enabled)</p>
+
+          <p><span class="t-prompt">$</span> <span class="t-cmd">terraform apply -auto-approve</span></p>
+          <p class="t-output-green">Apply complete! AWS VPC, EKS, EC2, S3, RDS &amp; ALBs 100% automated.</p>
+
+          <p><span class="t-prompt">$</span> <span class="t-cmd">echo $DEPLOYMENT_METRIC</span></p>
+          <p class="t-output">Reporting cycle reduced from T+5 days to T+1 / Real-time with Zero Downtime.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Metrics Bar -->
+  <section class="metrics-bar">
+    <div class="metrics-container">
+      <div class="metric-item">
+        <h3 class="metric-number">6.5+</h3>
+        <p class="metric-label">Years IT Experience</p>
+      </div>
+      <div class="metric-item">
+        <h3 class="metric-number">25+</h3>
+        <p class="metric-label">K8s Microservices Automated</p>
+      </div>
+      <div class="metric-item">
+        <h3 class="metric-number">T+5 &rarr; T+1</h3>
+        <p class="metric-label">Release Cycle Reduction</p>
+      </div>
+      <div class="metric-item">
+        <h3 class="metric-number">99.99%</h3>
+        <p class="metric-label">Production Uptime (NOD Support)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">01 // PROFILE SUMMARY</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I am <strong>Jami Devi Vara Prasad</strong>, a dedicated DevOps and Cloud Infrastructure professional based in <strong>Hyderabad</strong> with <strong>6.5 years of IT experience</strong> in automating enterprise software delivery, cloud resource provisioning, and managing mission-critical containerized environments.
+          </p>
+          <p>
+            In my current role at <strong>TransUnion</strong>, I spearhead DevOps and infrastructure operations for large-scale distributed platforms, including a <strong>25-microservice Financial Reporting &amp; Analytics platform</strong>. I specialize in building zero-downtime CI/CD deployment pipelines, managing Kubernetes cluster auto-scaling for high-volume batch and streaming workloads (Kafka, Spark), automating AWS infrastructure with Terraform, and providing dedicated <strong>Night of Deployments (NOD)</strong> production support.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <i class="fa-solid fa-infinity highlight-icon"></i>
+              <div>
+                <h4>CI/CD &amp; Build Engineering</h4>
+                <p>Jenkins (Master/Slave), Maven, ANT, JFrog Artifactory, SonarQube</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <i class="fa-solid fa-cloud highlight-icon"></i>
+              <div>
+                <h4>Cloud &amp; Infrastructure as Code</h4>
+                <p>AWS (EC2, S3, VPC, ALB, Auto Scaling, Lambda), Terraform, Azure [Basic]</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <i class="fa-solid fa-cubes highlight-icon"></i>
+              <div>
+                <h4>Container Orchestration</h4>
+                <p>Docker, Kubernetes (K8s), Helm Charts, Docker Swarm</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <i class="fa-solid fa-chart-line highlight-icon"></i>
+              <div>
+                <h4>Configuration &amp; SRE Monitoring</h4>
+                <p>Ansible, Prometheus, Grafana, Shell/Bash, Groovy, Linux/Unix</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack Section -->
+  <section id="skills" class="section section-darker">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">02 // TECHNICAL TOOLKIT</span>
+        <h2 class="section-title">Skills &amp; Technologies</h2>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Category 1: Cloud & Virtualization -->
+        <div class="skill-category-card">
+          <div class="card-icon"><i class="fa-solid fa-cloud"></i></div>
+          <h3>Cloud Platforms</h3>
+          <ul class="skills-tags">
+            <li>AWS (EC2, S3, VPC, ALB/ELB, Auto Scaling)</li>
+            <li>AWS Lambda, IAM, CloudWatch &amp; RDS</li>
+            <li>Azure [Basic Fundamentals]</li>
+          </ul>
+        </div>
+
+        <!-- Category 2: Containerization & Orchestration -->
+        <div class="skill-category-card">
+          <div class="card-icon"><i class="fa-brands fa-docker"></i></div>
+          <h3>Containers &amp; Kubernetes</h3>
+          <ul class="skills-tags">
+            <li>Kubernetes (EKS / Self-Managed Cluster Orchestration)</li>
+            <li>Docker &amp; Multi-stage Dockerfile Optimization</li>
+            <li>Helm Charts (Package Management &amp; Releases)</li>
+            <li>Docker Swarm</li>
+          </ul>
+        </div>
+
+        <!-- Category 3: CI/CD & Build Tools -->
+        <div class="skill-category-card">
+          <div class="card-icon"><i class="fa-solid fa-gears"></i></div>
+          <h3>CI/CD &amp; Build Automation</h3>
+          <ul class="skills-tags">
+            <li>Jenkins (Distributed Master-Slave &amp; Declarative Pipelines)</li>
+            <li>Build Tools: Maven, ANT, Makefile</li>
+            <li>JFrog Artifactory (Artifact Repository Management)</li>
+            <li>SonarQube (Code Quality &amp; Security Gates)</li>
+          </ul>
+        </div>
+
+        <!-- Category 4: IaC & Configuration Management -->
+        <div class="skill-category-card">
+          <div class="card-icon"><i class="fa-solid fa-server"></i></div>
+          <h3>IaC &amp; Config Management</h3>
+          <ul class="skills-tags">
+            <li>Terraform (Modular Infrastructure &amp; State Management)</li>
+            <li>Ansible (Playbooks, Roles, Inventory &amp; Modules)</li>
+            <li>Automated Server Provisioning &amp; Patching</li>
+          </ul>
+        </div>
+
+        <!-- Category 5: Scripting & Version Control -->
+        <div class="skill-category-card">
+          <div class="card-icon"><i class="fa-solid fa-terminal"></i></div>
+          <h3>Scripting &amp; Version Control</h3>
+          <ul class="skills-tags">
+            <li>Shell / Bash Scripting (Automation &amp; Maintenance)</li>
+            <li>Groovy Scripting (Jenkins Pipeline Automation)</li>
+            <li>YAML &amp; JSON Configuration</li>
+            <li>Python [Basic Automation Scripting]</li>
+            <li>Git &amp; GitHub (Branching Strategies &amp; Merge Conflict Resolution)</li>
+          </ul>
+        </div>
+
+        <!-- Category 6: Observability, Servers & Tools -->
+        <div class="skill-category-card">
+          <div class="card-icon"><i class="fa-solid fa-chart-pie"></i></div>
+          <h3>Observability &amp; Operations</h3>
+          <ul class="skills-tags">
+            <li>Prometheus &amp; Grafana (Cluster &amp; Service Dashboards)</li>
+            <li>Operating Systems: UNIX, Linux (RHEL, Ubuntu), Windows</li>
+            <li>Web/App Servers: Apache HTTP, Apache Tomcat</li>
+            <li>Collaboration: Jira, Confluence, SharePoint</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Timeline Section -->
+  <section id="experience" class="section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">03 // CAREER TIMELINE</span>
+        <h2 class="section-title">Work Experience (6.5 Years)</h2>
+      </div>
+
+      <div class="timeline">
+        <!-- Job 1: TransUnion (Current) -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Sept 2023 - Present</span>
+            <h3 class="timeline-role">DevOps Engineer</h3>
+            <span class="timeline-company"><i class="fa-solid fa-building"></i> TransUnion</span>
+            <div class="tools-badge-row">
+              <span class="badge-tech">AWS</span>
+              <span class="badge-tech">Kubernetes</span>
+              <span class="badge-tech">Docker</span>
+              <span class="badge-tech">Jenkins</span>
+              <span class="badge-tech">Terraform</span>
+              <span class="badge-tech">Ansible</span>
+              <span class="badge-tech">Prometheus</span>
+              <span class="badge-tech">Grafana</span>
+              <span class="badge-tech">Shell Scripting</span>
+              <span class="badge-tech">Git</span>
+              <span class="badge-tech">Jira</span>
+            </div>
+            <ul class="timeline-tasks">
+              <li><strong>Microservices Orchestration:</strong> Managed Kubernetes cluster deployments and autoscaling for 20–25 distributed microservices (Data Ingestion, Performance Engine, Risk Analytics, Compliance) to handle heavy month-end and quarter-end batch processing loads.</li>
+              <li><strong>CI/CD Pipeline Engineering:</strong> Architected and maintained automated multi-stage Jenkins CI/CD pipelines across DEV, UAT, and Production environments, enabling rapid automated builds and artifact deployment.</li>
+              <li><strong>Infrastructure as Code (IaC):</strong> Provisioned and managed AWS cloud infrastructure (EC2, S3, VPC, ALBs, Auto Scaling groups, Lambda, RDS) using modular Terraform code with zero configuration drift.</li>
+              <li><strong>Configuration Management:</strong> Authored and executed reusable Ansible playbooks for automated server configuration, dependency installation, and security patching.</li>
+              <li><strong>Production Operations &amp; NOD Support:</strong> Provided critical on-call support during <strong>Night of Deployments (NOD)</strong>, ensuring zero-downtime production releases and rapid issue triage.</li>
+              <li><strong>Build Break Resolution:</strong> Diagnosed compilation and runtime build failures, coordinating swiftly with development teams to resolve build breaks.</li>
+              <li><strong>Release &amp; Branching Strategy:</strong> Managed GitHub branching, release tags, and post-release merge conflict resolution; tracked all release configurations and runbooks via Confluence.</li>
+              <li><strong>Observability &amp; Health Monitoring:</strong> Implemented Prometheus and Grafana dashboards for real-time monitoring of cluster resources, container health, and pipeline execution metrics.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Job 2: Caliber Technologies -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Jan 2023 - Aug 2023</span>
+            <h3 class="timeline-role">Product Consultant (DevOps &amp; Infrastructure)</h3>
+            <span class="timeline-company"><i class="fa-solid fa-building"></i> Caliber Technologies</span>
+            <div class="tools-badge-row">
+              <span class="badge-tech">AWS</span>
+              <span class="badge-tech">Terraform</span>
+              <span class="badge-tech">Jenkins</span>
+              <span class="badge-tech">Docker</span>
+              <span class="badge-tech">Docker Swarm</span>
+              <span class="badge-tech">Kubernetes</span>
+              <span class="badge-tech">Linux</span>
+              <span class="badge-tech">Jira</span>
+            </div>
+            <ul class="timeline-tasks">
+              <li>Configured and administered Jenkins Master-Slave distributed architecture on Linux machines for executing concurrent, parallel build jobs.</li>
+              <li>Created and maintained Maven build scripts for streamlined compilation and artifact generation.</li>
+              <li>Authored optimized Dockerfiles, implemented multi-stage builds to minimize container image sizes, and deployed container workloads.</li>
+              <li>Administered AWS cloud environments (EC2 instances, VPC networking, S3 storage buckets).</li>
+              <li>Investigated root causes for Jira defect tickets in triage teams and maintained real-time operational status dashboards.</li>
+              <li>Scheduled and coordinated pre/post-production deployment reviews and environment validations.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Job 3: TransUnion (Software Engineer / Senior Consultant) -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Feb 2020 - Jan 2023</span>
+            <h3 class="timeline-role">Senior Consultant / Software Engineer</h3>
+            <span class="timeline-company"><i class="fa-solid fa-building"></i> TransUnion</span>
+            <div class="tools-badge-row">
+              <span class="badge-tech">AWS</span>
+              <span class="badge-tech">Terraform</span>
+              <span class="badge-tech">Ansible</span>
+              <span class="badge-tech">Jenkins</span>
+              <span class="badge-tech">Docker</span>
+              <span class="badge-tech">Kubernetes</span>
+              <span class="badge-tech">JFrog Artifactory</span>
+              <span class="badge-tech">Shell Scripting</span>
+            </div>
+            <ul class="timeline-tasks">
+              <li>Automated AWS cloud resource provisioning and lifecycle management using Terraform IaC.</li>
+              <li>Developed Ansible Playbooks to automate server provisioning and software configuration across multi-tier environments.</li>
+              <li>Configured distributed Jenkins build agents and integrated JFrog Artifactory for secure artifact repository versioning.</li>
+              <li>Wrote Bash/Shell scripts for routine server maintenance, health checks, log rotation, and automated backup/recovery routines.</li>
+              <li>Deployed containerized applications using Docker and orchestrated services on Kubernetes clusters.</li>
+              <li>Collaborated with engineering teams to resolve build/release failures and maintain high continuous integration standards.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects & Key Implementations -->
+  <section id="projects" class="section section-darker">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">04 // KEY IMPLEMENTATIONS</span>
+        <h2 class="section-title">Key DevOps Projects &amp; Solutions</h2>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Implementation 1: Financial Analytics Platform (Recent Project) -->
+        <div class="project-card">
+          <div class="project-top">
+            <i class="fa-solid fa-chart-line project-icon"></i>
+            <div class="project-links">
+              <span class="project-category">Enterprise K8s &amp; CI/CD (2023 - Present)</span>
+            </div>
+          </div>
+          <h3 class="project-title">Financial Analytics &amp; Reporting Platform Infrastructure</h3>
+          <p class="project-desc">
+            Architected and maintained the DevOps infrastructure for a distributed enterprise platform composed of 20–25 microservices. Orchestrated Kubernetes clusters for handling peak month-end batch and streaming workloads (Kafka, Spark), automated CI/CD pipelines in Jenkins, and reduced the reporting release cycle from T+5 days down to T+1 / near real-time with zero downtime.
+          </p>
+          <div class="project-tech">
+            <span>Kubernetes</span>
+            <span>Docker</span>
+            <span>Jenkins</span>
+            <span>AWS</span>
+            <span>Prometheus</span>
+            <span>Grafana</span>
+          </div>
+        </div>
+
+        <!-- Implementation 2: AWS & Terraform IaC -->
+        <div class="project-card">
+          <div class="project-top">
+            <i class="fa-solid fa-cloud-arrow-up project-icon"></i>
+            <div class="project-links">
+              <span class="project-category">Cloud &amp; IaC Automation</span>
+            </div>
+          </div>
+          <h3 class="project-title">Automated Multi-Tier AWS Infrastructure with Terraform</h3>
+          <p class="project-desc">
+            Engineered modular, reusable Terraform templates for provisioning secure AWS VPCs, EC2 instances, Application Load Balancers (ALBs), Auto Scaling groups, S3 storage lakes, and IAM least-privilege security policies with zero configuration drift.
+          </p>
+          <div class="project-tech">
+            <span>Terraform</span>
+            <span>AWS VPC</span>
+            <span>AWS EC2</span>
+            <span>AWS ALB</span>
+            <span>AWS S3</span>
+            <span>IAM</span>
+          </div>
+        </div>
+
+        <!-- Implementation 3: Ansible & Enterprise Build Pipelines -->
+        <div class="project-card">
+          <div class="project-top">
+            <i class="fa-solid fa-gears project-icon"></i>
+            <div class="project-links">
+              <span class="project-category">Config &amp; Artifact Automation</span>
+            </div>
+          </div>
+          <h3 class="project-title">Enterprise CI/CD Pipelines &amp; Ansible Server Automation</h3>
+          <p class="project-desc">
+            Established distributed Jenkins Master-Slave build infrastructure for parallel Maven compilations, integrated SonarQube quality gates, versioned deployment packages to JFrog Artifactory, and automated server configuration using Ansible Playbooks.
+          </p>
+          <div class="project-tech">
+            <span>Ansible</span>
+            <span>Jenkins</span>
+            <span>Maven</span>
+            <span>JFrog Artifactory</span>
+            <span>SonarQube</span>
+            <span>Shell Scripting</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">05 // ACADEMICS</span>
+        <h2 class="section-title">Education</h2>
+      </div>
+
+      <div class="education-grid">
+        <div class="education-card">
+          <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div class="edu-info">
+            <span class="edu-year">Graduation</span>
+            <h3>B.Com (Computer Applications)</h3>
+            <p class="edu-college">PRISM Degree &amp; PG College</p>
+          </div>
+        </div>
+
+        <div class="education-card">
+          <div class="edu-icon"><i class="fa-solid fa-building-columns"></i></div>
+          <div class="edu-info">
+            <span class="edu-year">Pre-University Course (PUC)</span>
+            <h3>Intermediate / PUC</h3>
+            <p class="edu-college">Sri Chaitanya Junior College</p>
+          </div>
+        </div>
+
+        <div class="education-card">
+          <div class="edu-icon"><i class="fa-solid fa-school"></i></div>
+          <div class="edu-info">
+            <span class="edu-year">Secondary Education</span>
+            <h3>SSLC / Secondary School</h3>
+            <p class="edu-college">Sri Chaitanya Techno School</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section section-darker">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">06 // GET IN TOUCH</span>
+        <h2 class="section-title">Let's Connect</h2>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-info">
+          <h3>Looking for an experienced DevOps / Cloud Engineer?</h3>
+          <p>
+            With 6.5+ years of hands-on experience in AWS, Kubernetes (25+ microservices), Jenkins CI/CD, Terraform IaC, Ansible, and production support, I am ready to contribute to your engineering infrastructure and reliability goals.
+          </p>
+          <div class="contact-details">
+            <div class="contact-detail-item">
+              <i class="fa-solid fa-user"></i>
+              <span><strong>Jami Devi Vara Prasad</strong></span>
+            </div>
+            <div class="contact-detail-item">
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:jamidevivaraprasad611@gmail.com">jamidevivaraprasad611@gmail.com</a>
+            </div>
+            <div class="contact-detail-item">
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:9281294893">+91 9281294893</a>
+            </div>
+            <div class="contact-detail-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Hyderabad, India (Open to Remote / Hybrid / Relocation)</span>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" required placeholder="Jane Doe" />
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" required placeholder="jane@example.com" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="4" required placeholder="Hi Prasad, let's discuss an opportunity..."></textarea>
+          </div>
+          <button type="submit" class="btn-primary w-full">
+            <i class="fa-solid fa-paper-plane"></i> Send Message
+          </button>
+          <div id="formSuccess" class="form-success-msg">
+            <i class="fa-solid fa-circle-check"></i> Thank you! Your message has been sent.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <p>&copy; 2026 Jami Devi Vara Prasad. DevOps &amp; Cloud Infrastructure Engineer.</p>
+      <div class="footer-socials">
+        <a href="mailto:jamidevivaraprasad611@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="tel:9281294893" title="Phone"><i class="fa-solid fa-phone"></i></a>
+        <a href="https://linkedin.com" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
