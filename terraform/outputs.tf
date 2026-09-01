@@ -17,31 +17,21 @@ output "cloudfront_domain_name" {
   value       = aws_cloudfront_distribution.portfolio.domain_name
 }
 
-output "acm_dns_validation_records" {
-  description = "CNAME records to add at your domain registrar to validate your free SSL Certificate"
-  value = {
-    for dvo in aws_acm_certificate.cert.domain_validation_options : dvo.domain_name => {
-      name   = dvo.resource_record_name
-      type   = dvo.resource_record_type
-      record = dvo.resource_record_value
-    }
-  }
+output "route53_nameservers" {
+  description = "AWS Route 53 Nameservers to set in GoDaddy"
+  value       = aws_route53_zone.primary.name_servers
 }
 
-output "dns_setup_instructions" {
-  description = "Summary of DNS records to add at your domain registrar"
-  value = <<EOT
+output "route53_setup_instructions" {
+  description = "Instructions to point GoDaddy domain to Route 53"
+  value       = <<EOT
 --------------------------------------------------------------------------------
-DNS CONFIGURATION INSTRUCTIONS FOR YOUR DOMAIN REGISTRAR (${var.domain_name}):
+GODADDY NAMESERVER SETUP INSTRUCTIONS:
 --------------------------------------------------------------------------------
-1. SSL CERTIFICATE VALIDATION:
-   Add the CNAME records shown above in 'acm_dns_validation_records'.
-
-2. POINT DOMAIN TO CLOUDFRONT:
-   - Root Domain (@ / ${var.domain_name}): 
-     Add CNAME / ALIAS / ANAME record pointing to: ${aws_cloudfront_distribution.portfolio.domain_name}
-   - WWW Subdomain (www.${var.domain_name}): 
-     Add CNAME record pointing to: ${aws_cloudfront_distribution.portfolio.domain_name}
+1. Log in to GoDaddy -> Domain Portfolio -> jamidvp.me -> DNS -> Nameservers.
+2. Click "Change Nameservers" -> Select "I'll use my own nameservers".
+3. Enter the 4 AWS Nameservers listed in 'route53_nameservers'.
+4. Save changes. Route 53 will now manage all DNS with native CloudFront aliases!
 --------------------------------------------------------------------------------
 EOT
 }
