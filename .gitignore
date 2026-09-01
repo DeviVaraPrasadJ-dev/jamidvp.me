@@ -1,0 +1,30 @@
+# ==============================================================================
+# Git Ignore - DevOps Portfolio & Terraform
+# ==============================================================================
+
+# Terraform State & Cache Files (CRITICAL: Do NOT commit state files to Git)
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+.terraform/
+.terraform.lock.hcl.bak
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Secrets, Keys & Credentials
+*.pem
+*.key
+.env
+.env.*
+
+# OS and Editor artifacts
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
