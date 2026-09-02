@@ -301,7 +301,7 @@ a {
  * 2. Hero Section (Executive Engineering Architecture)
  * -------------------------------------------------------------------------- */
 .hero-section {
-  padding: 60px 20px 72px;
+  padding: 72px 24px 84px;
   background: radial-gradient(circle at 50% 0%, #f1f5f9 0%, #ffffff 85%);
   background-image: radial-gradient(#cbd5e1 1.1px, transparent 1.1px);
   background-size: 28px 28px;
@@ -311,7 +311,7 @@ a {
 }
 
 .hero-inner {
-  max-width: 1040px;
+  max-width: 1120px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -324,12 +324,12 @@ a {
   gap: 8px;
   background: rgba(255, 255, 255, 0.95);
   border: 1px solid #cbd5e1;
-  padding: 6px 18px;
+  padding: 7px 20px;
   border-radius: var(--radius-pill);
-  font-size: 13px;
+  font-size: 13.5px;
   font-weight: 600;
   color: #334155;
-  margin-bottom: 18px;
+  margin-bottom: 22px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
   backdrop-filter: blur(8px);
 }
@@ -344,29 +344,29 @@ a {
 }
 
 .hero-heading {
-  font-size: 52px;
+  font-size: 54px;
   line-height: 1.1;
   font-weight: 800;
   letter-spacing: -0.035em;
   color: #0f172a;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 
 .hero-subtitle {
-  font-size: 20px;
+  font-size: 21px;
   font-weight: 600;
   color: var(--accent-primary);
   letter-spacing: -0.015em;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .hero-lead {
-  font-size: 17.5px;
-  line-height: 1.65;
+  font-size: 18px;
+  line-height: 1.7;
   font-weight: 400;
   color: #475569;
-  max-width: 840px;
-  margin: 0 auto 28px;
+  max-width: 860px;
+  margin: 0 auto 34px;
   text-align: center;
 }
 
@@ -379,17 +379,17 @@ a {
 .hero-stats-bar {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 14px;
+  gap: 16px;
   width: 100%;
-  max-width: 940px;
-  margin: 0 auto 22px;
+  max-width: 1040px;
+  margin: 0 auto 28px;
 }
 
 .hero-stat-card {
   background: #ffffff;
   border: 1px solid #e2e8f0;
-  border-radius: 12px;
-  padding: 16px 12px;
+  border-radius: 14px;
+  padding: 20px 16px;
   text-align: center;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
   transition: all 0.2s var(--ease-smooth);
@@ -402,7 +402,7 @@ a {
 }
 
 .hero-stat-card .stat-number {
-  font-size: 28px;
+  font-size: 30px;
   font-weight: 800;
   color: #0f172a;
   line-height: 1.1;
@@ -415,17 +415,17 @@ a {
 }
 
 .hero-stat-card .stat-label {
-  font-size: 13px;
+  font-size: 13.5px;
   font-weight: 700;
   color: #1e293b;
-  margin-top: 4px;
+  margin-top: 5px;
 }
 
 .hero-stat-card .stat-sub {
-  font-size: 11.5px;
+  font-size: 12px;
   font-weight: 500;
   color: #64748b;
-  margin-top: 2px;
+  margin-top: 3px;
 }
 
 .hero-meta-row {
@@ -433,27 +433,27 @@ a {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 28px;
+  gap: 14px;
+  margin-bottom: 36px;
 }
 
 .hero-meta-item {
   background: rgba(255, 255, 255, 0.9);
   border: 1px solid #e2e8f0;
-  padding: 6px 14px;
+  padding: 7px 16px;
   border-radius: var(--radius-pill);
-  font-size: 12.5px;
+  font-size: 13px;
   font-weight: 500;
   color: #475569;
   display: inline-flex;
   align-items: center;
-  gap: 7px;
+  gap: 8px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
 }
 
 .hero-meta-item i {
   color: var(--accent-primary);
-  font-size: 12.5px;
+  font-size: 13px;
 }
 
 /* Branded Tech Matrix Grid (3 Columns x 2 Rows) */
@@ -461,20 +461,20 @@ a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, auto);
-  gap: 12px;
-  margin: 0 auto 34px;
+  gap: 16px;
+  margin: 0 auto 40px;
   width: 100%;
-  max-width: 940px;
+  max-width: 1040px;
 }
 
 .hero-pill-badge {
   background: #ffffff;
   border: 1px solid #e2e8f0;
-  padding: 12px 14px;
-  border-radius: 10px;
+  padding: 14px 16px;
+  border-radius: 12px;
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
   transition: all 0.2s var(--ease-smooth);
   text-align: left;
@@ -530,10 +530,10 @@ a {
  * 3. macOS Terminal Window (Default Apple White Theme with Black Letters)
  * -------------------------------------------------------------------------- */
 .terminal-window {
-  max-width: 940px;
+  max-width: 1040px;
   width: 100%;
   margin: 0 auto;
-  border-radius: 12px;
+  border-radius: 14px;
   background: #ffffff;
   border: 1px solid #d1d5db;
   box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.05);
@@ -784,7 +784,7 @@ a {
  * 4. Section Containers & Headers
  * -------------------------------------------------------------------------- */
 .section-wrapper {
-  padding: 46px 20px;
+  padding: 72px 24px;
 }
 
 .section-wrapper.bg-subtle {
@@ -794,39 +794,39 @@ a {
 }
 
 .container-narrow {
-  max-width: 1080px;
+  max-width: 1160px;
   margin: 0 auto;
 }
 
 .section-header {
   text-align: center;
-  margin-bottom: 24px;
+  margin-bottom: 42px;
 }
 
 .section-eyebrow {
-  font-size: 12px;
+  font-size: 12.5px;
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--accent-primary);
-  margin-bottom: 4px;
+  margin-bottom: 8px;
   display: block;
 }
 
 .section-title {
-  font-size: 30px;
+  font-size: 33px;
   line-height: 1.22;
   font-weight: 800;
   letter-spacing: -0.025em;
   color: var(--text-primary);
-  margin-bottom: 6px;
+  margin-bottom: 10px;
 }
 
 .section-desc {
-  font-size: 15px;
-  line-height: 1.5;
+  font-size: 15.5px;
+  line-height: 1.6;
   color: var(--text-secondary);
-  max-width: 680px;
+  max-width: 720px;
   margin: 0 auto;
 }
 
@@ -836,14 +836,14 @@ a {
 .pillars-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: 24px;
 }
 
 .pillar-card {
   background: var(--bg-card);
   border: 1px solid var(--border-light);
   border-radius: var(--radius-lg);
-  padding: 24px;
+  padding: 28px 24px;
   box-shadow: var(--shadow-card);
   transition: all 0.2s var(--ease-smooth);
 }
@@ -855,17 +855,17 @@ a {
 }
 
 .pillar-icon {
-  width: 44px;
-  height: 44px;
-  border-radius: 10px;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
   background: var(--accent-subtle);
   border: 1px solid var(--accent-border);
   color: var(--accent-primary);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 20px;
-  margin-bottom: 14px;
+  font-size: 22px;
+  margin-bottom: 16px;
 }
 
 .pillar-stat {
@@ -880,12 +880,12 @@ a {
   font-size: 16px;
   font-weight: 700;
   color: var(--text-primary);
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 
 .pillar-desc {
-  font-size: 13.5px;
-  line-height: 1.5;
+  font-size: 14px;
+  line-height: 1.55;
   color: var(--text-secondary);
 }
 
@@ -895,14 +895,14 @@ a {
 .pipelines-container {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 36px;
 }
 
 .pipeline-box {
   background: var(--bg-card);
   border: 1px solid var(--border-light);
   border-radius: var(--radius-xl);
-  padding: 28px;
+  padding: 34px 30px;
   box-shadow: var(--shadow-card);
 }
 
@@ -1096,14 +1096,14 @@ a {
 .bento-grid-balanced {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: 24px;
 }
 
 .bento-cell {
   background: var(--bg-card);
   border: 1px solid var(--border-light);
   border-radius: var(--radius-xl);
-  padding: 28px;
+  padding: 34px 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1122,22 +1122,22 @@ a {
 }
 
 .bento-cell-tag {
-  font-size: 11.5px;
+  font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   color: var(--accent-primary);
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   display: block;
 }
 
 .bento-cell-stat {
-  font-size: 44px;
+  font-size: 46px;
   font-weight: 800;
   line-height: 1;
   letter-spacing: -0.03em;
   color: var(--text-primary);
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .bento-cell-stat span {
@@ -1145,15 +1145,15 @@ a {
 }
 
 .bento-cell-title {
-  font-size: 16.5px;
+  font-size: 17.5px;
   font-weight: 700;
   color: var(--text-primary);
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 
 .bento-cell-text {
-  font-size: 14px;
-  line-height: 1.5;
+  font-size: 14.5px;
+  line-height: 1.55;
   color: var(--text-secondary);
 }
 
@@ -1163,14 +1163,14 @@ a {
 .experience-list {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 28px;
 }
 
 .role-card {
   background: var(--bg-card);
   border: 1px solid var(--border-light);
   border-radius: var(--radius-xl);
-  padding: 30px;
+  padding: 34px 32px;
   box-shadow: var(--shadow-card);
   transition: all 0.2s ease;
 }
@@ -1189,7 +1189,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
   flex-wrap: wrap;
   gap: 8px;
 }
@@ -1198,49 +1198,49 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-size: 14px;
+  font-size: 14.5px;
   font-weight: 700;
   color: var(--text-primary);
   background: var(--bg-subtle);
   border: 1px solid var(--border-light);
-  padding: 5px 14px;
+  padding: 6px 16px;
   border-radius: var(--radius-pill);
 }
 
 .role-duration {
-  font-size: 13.5px;
+  font-size: 14px;
   font-weight: 500;
   color: var(--text-tertiary);
 }
 
 .role-name {
-  font-size: 21px;
+  font-size: 22px;
   font-weight: 800;
   letter-spacing: -0.015em;
   color: var(--text-primary);
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .role-summary {
-  font-size: 15px;
-  line-height: 1.55;
+  font-size: 15.5px;
+  line-height: 1.6;
   color: var(--text-secondary);
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 
 .role-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
-  margin-bottom: 20px;
+  gap: 8px;
+  margin-bottom: 22px;
 }
 
 .role-tag {
-  font-size: 12px;
+  font-size: 12.5px;
   font-weight: 600;
   background: var(--bg-subtle);
   border: 1px solid var(--border-light);
-  padding: 3px 10px;
+  padding: 4px 12px;
   border-radius: var(--radius-pill);
   color: var(--text-secondary);
 }
@@ -1248,21 +1248,21 @@ a {
 .role-bullets {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 14px;
+  gap: 16px;
 }
 
 .role-bullet {
   display: flex;
   align-items: flex-start;
-  gap: 10px;
-  font-size: 13.5px;
-  line-height: 1.45;
+  gap: 12px;
+  font-size: 14px;
+  line-height: 1.5;
   color: var(--text-secondary);
 }
 
 .role-bullet i {
   color: var(--accent-green);
-  font-size: 14px;
+  font-size: 15px;
   margin-top: 3px;
   flex-shrink: 0;
 }
@@ -1278,7 +1278,7 @@ a {
 .skills-matrix-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 22px;
+  gap: 24px;
   align-items: stretch;
 }
 
@@ -1286,7 +1286,7 @@ a {
   background: var(--bg-card);
   border: 1px solid var(--border-light);
   border-radius: var(--radius-lg);
-  padding: 26px 24px;
+  padding: 28px 26px;
   box-shadow: var(--shadow-subtle);
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
   display: flex;
@@ -1305,26 +1305,26 @@ a {
   display: flex;
   align-items: center;
   gap: 14px;
-  margin-bottom: 18px;
-  padding-bottom: 14px;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
   border-bottom: 1px solid var(--border-light);
 }
 
 .skill-icon {
-  width: 44px;
-  height: 44px;
-  border-radius: 10px;
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
   background: var(--accent-subtle);
   color: var(--accent-primary);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 20px;
+  font-size: 21px;
   flex-shrink: 0;
 }
 
 .skill-title {
-  font-size: 17px;
+  font-size: 17.5px;
   font-weight: 700;
   color: var(--text-primary);
   line-height: 1.3;
@@ -1334,14 +1334,14 @@ a {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 13px;
+  gap: 14px;
   margin: 0;
   padding: 0;
   flex: 1 1 auto;
 }
 
 .skill-items li {
-  font-size: 14.5px;
+  font-size: 14px;
   line-height: 1.55;
   color: var(--text-secondary);
   display: flex;
@@ -1363,20 +1363,7 @@ a {
 .skill-items li strong {
   color: var(--text-primary);
   font-weight: 600;
-  font-size: 14.5px;
-}
-
-.skill-items li {
-  font-size: 13.5px;
-  color: var(--text-secondary);
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.skill-items li i {
-  color: var(--accent-green);
-  font-size: 12px;
+  font-size: 14px;
 }
 
 /* -----------------------------------------------------------------------------
@@ -1385,14 +1372,14 @@ a {
 .certs-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: 24px;
 }
 
 .cert-card {
   background: var(--bg-card);
   border: 1px solid var(--border-light);
   border-radius: var(--radius-lg);
-  padding: 22px;
+  padding: 26px 22px;
   box-shadow: var(--shadow-subtle);
   transition: all 0.2s ease;
   display: flex;
@@ -1407,36 +1394,36 @@ a {
 }
 
 .cert-icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
   background: var(--accent-subtle);
   border: 1px solid var(--accent-border);
   color: var(--accent-primary);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 18px;
-  margin-bottom: 12px;
+  font-size: 20px;
+  margin-bottom: 14px;
 }
 
 .cert-title {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 700;
   color: var(--text-primary);
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
 
 .cert-issuer {
-  font-size: 12.5px;
+  font-size: 13px;
   color: var(--text-tertiary);
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .cert-badge-tag {
-  font-size: 11px;
+  font-size: 11.5px;
   font-weight: 600;
-  padding: 2px 8px;
+  padding: 3px 10px;
   border-radius: var(--radius-pill);
   background: var(--bg-subtle);
   border: 1px solid var(--border-light);
@@ -1476,11 +1463,11 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 }
 
 .project-tag {
-  font-size: 11px;
+  font-size: 11.5px;
   font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -1488,41 +1475,41 @@ a {
 }
 
 .project-metric {
-  font-size: 11px;
+  font-size: 11.5px;
   font-weight: 700;
   background: var(--accent-green-subtle);
   color: #065f46;
   border: 1px solid var(--accent-green-border);
-  padding: 2px 8px;
+  padding: 3px 10px;
   border-radius: var(--radius-pill);
 }
 
 .project-title {
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 700;
   color: var(--text-primary);
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .project-desc {
-  font-size: 13.5px;
-  line-height: 1.5;
+  font-size: 14px;
+  line-height: 1.55;
   color: var(--text-secondary);
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 
 .project-badges {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
+  gap: 8px;
 }
 
 .project-badges span {
-  font-size: 11.5px;
+  font-size: 12px;
   font-weight: 600;
   background: var(--bg-subtle);
   border: 1px solid var(--border-light);
-  padding: 3px 8px;
+  padding: 4px 10px;
   border-radius: var(--radius-pill);
   color: var(--text-secondary);
 }
@@ -1533,14 +1520,14 @@ a {
 .edu-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 24px;
 }
 
 .edu-card {
   background: var(--bg-card);
   border: 1px solid var(--border-light);
   border-radius: var(--radius-lg);
-  padding: 24px;
+  padding: 28px 24px;
   box-shadow: var(--shadow-subtle);
   transition: all 0.2s ease;
 }
@@ -1551,32 +1538,32 @@ a {
 }
 
 .edu-tag {
-  font-size: 11px;
+  font-size: 11.5px;
   font-weight: 700;
   color: var(--accent-indigo);
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
   display: inline-flex;
   align-items: center;
   gap: 6px;
 }
 
 .edu-degree-title {
-  font-size: 17px;
+  font-size: 17.5px;
   font-weight: 700;
   color: var(--text-primary);
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
 
 .edu-college {
-  font-size: 14px;
+  font-size: 14.5px;
   color: var(--text-secondary);
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .edu-place {
-  font-size: 12.5px;
+  font-size: 13px;
   color: var(--text-tertiary);
   display: flex;
   align-items: center;
@@ -1589,23 +1576,23 @@ a {
 .contact-grid-layout {
   display: grid;
   grid-template-columns: 1fr 1.15fr;
-  gap: 36px;
+  gap: 40px;
   align-items: start;
 }
 
 .contact-info-panel {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 16px;
 }
 
 .contact-item-card {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 16px;
   background: var(--bg-card);
   border: 1px solid var(--border-light);
-  padding: 16px 20px;
+  padding: 18px 22px;
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-subtle);
   transition: all 0.2s var(--ease-smooth);
@@ -1623,20 +1610,20 @@ a {
 }
 
 .contact-icon-box {
-  width: 42px;
-  height: 42px;
-  border-radius: 10px;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
   background: var(--accent-subtle);
   color: var(--accent-primary);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 17px;
+  font-size: 18px;
   flex-shrink: 0;
 }
 
 .contact-label {
-  font-size: 11px;
+  font-size: 11.5px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -1644,7 +1631,7 @@ a {
 }
 
 .contact-value {
-  font-size: 14.5px;
+  font-size: 15px;
   font-weight: 600;
   color: var(--text-primary);
 }
@@ -1654,26 +1641,26 @@ a {
   background: var(--bg-card);
   border: 1px solid var(--border-light);
   border-radius: var(--radius-xl);
-  padding: 32px;
+  padding: 34px 32px;
   box-shadow: var(--shadow-card);
 }
 
 .form-title {
-  font-size: 20px;
+  font-size: 21px;
   font-weight: 700;
   color: var(--text-primary);
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
   gap: 6px;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 }
 
 .form-group label {
-  font-size: 13px;
+  font-size: 13.5px;
   font-weight: 600;
   color: var(--text-secondary);
 }
@@ -1684,8 +1671,8 @@ a {
   border: 1px solid var(--border-light);
   color: var(--text-primary);
   font-family: inherit;
-  font-size: 14px;
-  padding: 10px 14px;
+  font-size: 14.5px;
+  padding: 11px 16px;
   border-radius: var(--radius-sm);
   outline: none;
   transition: all 0.15s ease;
@@ -1702,9 +1689,9 @@ a {
   width: 100%;
   background: #0f172a;
   color: #ffffff;
-  font-size: 14.5px;
+  font-size: 15px;
   font-weight: 600;
-  padding: 12px;
+  padding: 13px;
   border-radius: var(--radius-pill);
   border: none;
   cursor: pointer;
@@ -1739,8 +1726,8 @@ a {
   position: fixed;
   bottom: 24px;
   right: 24px;
-  width: 42px;
-  height: 42px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   background: #0f172a;
   color: #ffffff;
@@ -1775,41 +1762,41 @@ a {
 .footer-wrapper {
   background: var(--bg-subtle);
   border-top: 1px solid var(--border-light);
-  padding: 44px 20px 24px;
-  font-size: 13px;
+  padding: 60px 24px 36px;
+  font-size: 13.5px;
 }
 
 .footer-footnotes {
   border-bottom: 1px solid var(--border-light);
-  padding-bottom: 16px;
-  margin-bottom: 24px;
+  padding-bottom: 18px;
+  margin-bottom: 28px;
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 8px;
   color: var(--text-tertiary);
-  font-size: 12.5px;
+  font-size: 13px;
 }
 
 .footer-nav-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
-  padding-bottom: 28px;
+  gap: 28px;
+  padding-bottom: 32px;
   border-bottom: 1px solid var(--border-light);
 }
 
 .footer-col h4 {
-  font-size: 13px;
+  font-size: 13.5px;
   font-weight: 700;
   color: var(--text-primary);
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .footer-col ul {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
 }
 
 .footer-col ul a {
@@ -1824,15 +1811,15 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 20px;
+  padding-top: 24px;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 14px;
   color: var(--text-tertiary);
 }
 
 .footer-links-row {
   display: flex;
-  gap: 16px;
+  gap: 18px;
 }
 
 .footer-links-row a:hover {
