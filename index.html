@@ -164,7 +164,7 @@
           <div class="pill-icon-box"><i class="fa-solid fa-gears"></i></div>
           <div class="pill-text-col">
             <strong>Jenkins CI/CD</strong>
-            <span class="pill-sub">Distributed Pipelines &bull; SonarQube &bull; JFrog</span>
+            <span class="pill-sub">Distributed Pipelines &bull; SonarQube &bull; Amazon ECR</span>
           </div>
         </div>
         <div class="hero-pill-badge badge-sre">
@@ -251,7 +251,7 @@
             <div class="term-log-content">
               <div><span class="ci-stage">[Stage: Checkout]</span> ➔ Git commit sha: <span style="color:#0284c7; font-weight:600;">9e4f201</span> (Branch: <span style="color:#b45309; font-weight:600;">main</span>)</div>
               <div><span class="ci-stage">[Stage: Parallel Checks]</span> ➔ SonarQube Quality Gate <span class="ci-pass">PASSED</span> &bull; Maven Unit Tests (<span class="ci-pass">142/142 PASSED</span>)</div>
-              <div><span class="ci-stage">[Stage: Docker Build &amp; JFrog]</span> ➔ Image tagged <span style="color:#0284c7; font-weight:600;">sha256:4b219</span> published to Artifactory</div>
+              <div><span class="ci-stage">[Stage: Docker Build &amp; ECR]</span> ➔ Image tagged <span style="color:#0284c7; font-weight:600;">sha256:4b219</span> published to Amazon ECR</div>
             </div>
             <div class="term-success-box">
               <i class="fa-solid fa-circle-check"></i> <span>[Stage: Separate CD] Zero-Downtime EKS Rollout SUCCESS across DEV, UAT &amp; PROD.</span>
@@ -305,7 +305,7 @@
           <div class="pillar-icon"><i class="fa-solid fa-shield-virus"></i></div>
           <div class="pillar-stat">SAST Gates</div>
           <h3 class="pillar-name">Quality &amp; Governance</h3>
-          <p class="pillar-desc">Enforced SonarQube quality gates and parallel Maven test suites during CI prior to Artifactory promotion.</p>
+          <p class="pillar-desc">Enforced SonarQube quality gates and parallel Maven test suites during CI prior to Amazon ECR image push.</p>
         </div>
 
         <div class="pillar-card">
@@ -527,7 +527,7 @@
             <div class="bento-cell-stat">25<span>+</span></div>
             <h3 class="bento-cell-title">Kubernetes Microservices</h3>
             <p class="bento-cell-text">
-              Managing Kafka streaming and Spark batch workloads with automated horizontal pod autoscaling.
+              Managing containerized microservices and batch workloads with automated horizontal pod autoscaling.
             </p>
           </div>
         </div>
@@ -578,15 +578,13 @@
             <span class="role-tag">Terraform</span>
             <span class="role-tag">Jenkins</span>
             <span class="role-tag">Ansible</span>
-            <span class="role-tag">Kafka</span>
-            <span class="role-tag">Spark</span>
             <span class="role-tag">Prometheus &amp; Grafana</span>
           </div>
 
           <div class="role-bullets">
             <div class="role-bullet">
               <i class="fa-solid fa-circle-check"></i>
-              <div><strong>25-Microservice Cluster Orchestration:</strong> Automated Kubernetes deployment and autoscaling for Kafka and Spark workloads under heavy financial processing loads.</div>
+              <div><strong>25-Microservice Cluster Orchestration:</strong> Automated Kubernetes deployment and autoscaling for microservice workloads under heavy financial processing loads.</div>
             </div>
             <div class="role-bullet">
               <i class="fa-solid fa-circle-check"></i>
@@ -654,7 +652,7 @@
             <span class="role-tag">Terraform</span>
             <span class="role-tag">Ansible Playbooks</span>
             <span class="role-tag">Jenkins</span>
-            <span class="role-tag">JFrog Artifactory</span>
+            <span class="role-tag">Amazon ECR</span>
             <span class="role-tag">Shell Scripting</span>
           </div>
 
@@ -665,7 +663,7 @@
             </div>
             <div class="role-bullet">
               <i class="fa-solid fa-circle-check"></i>
-              <div><strong>Artifact &amp; Script Maintenance:</strong> Integrated JFrog Artifactory with Jenkins and engineered bash routines for log rotation, health checks, and backup automation.</div>
+              <div><strong>Container Registry &amp; Script Maintenance:</strong> Integrated Amazon ECR with Jenkins and engineered bash routines for log rotation, health checks, and backup automation.</div>
             </div>
           </div>
         </div>
@@ -723,7 +721,7 @@
             <li><i class="fa-solid fa-check"></i> <div><strong>Jenkins Distributed:</strong> Master-Slave build farm architecture on Linux</div></li>
             <li><i class="fa-solid fa-check"></i> <div><strong>Decoupled Pipelines:</strong> Dedicated CI build stages &amp; zero-downtime CD rollout</div></li>
             <li><i class="fa-solid fa-check"></i> <div><strong>Quality Governance:</strong> SonarQube SAST gates &amp; parallel Maven unit testing</div></li>
-            <li><i class="fa-solid fa-check"></i> <div><strong>Artifact Management:</strong> JFrog Artifactory repository with SHA256 tagging</div></li>
+            <li><i class="fa-solid fa-check"></i> <div><strong>Container Registry:</strong> Amazon ECR repository with SHA256 image tagging</div></li>
             <li><i class="fa-solid fa-check"></i> <div><strong>Modern CI/CD:</strong> GitLab CI, Argo CD GitOps workflows &amp; AWS CodePipeline</div></li>
           </ul>
         </div>
@@ -835,7 +833,7 @@
             </div>
             <h3 class="project-title">Financial Analytics &amp; Reporting Platform</h3>
             <p class="project-desc">
-              Architected the DevOps workflow for a 25-microservice platform. Implemented Kubernetes auto-scaling for peak month-end processing loads (Kafka, Spark) and guaranteed zero-downtime rolling updates.
+              Architected the DevOps workflow for a 25-microservice platform. Implemented Kubernetes auto-scaling for peak month-end processing loads and guaranteed zero-downtime rolling updates.
             </p>
           </div>
           <div class="project-badges">
@@ -875,13 +873,13 @@
             </div>
             <h3 class="project-title">Decoupled CI/CD &amp; Ansible Server Automation</h3>
             <p class="project-desc">
-              Architected distributed Jenkins master-slave build pipelines with parallel SonarQube &amp; unit test quality gates, automated artifact promotion to JFrog, and zero-downtime rolling deployments.
+              Architected distributed Jenkins master-slave build pipelines with parallel SonarQube &amp; unit test quality gates, automated image push to Amazon ECR, and zero-downtime rolling deployments.
             </p>
           </div>
           <div class="project-badges">
             <span>Ansible</span>
             <span>Jenkins</span>
-            <span>JFrog</span>
+            <span>Amazon ECR</span>
             <span>SonarQube</span>
             <span>Linux</span>
           </div>
