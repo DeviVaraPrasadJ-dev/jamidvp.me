@@ -68,15 +68,17 @@ document.addEventListener('DOMContentLoaded', () => {
         const cmdToCopy = activePane.getAttribute('data-command') || '';
         navigator.clipboard.writeText(cmdToCopy).then(() => {
           copyBtnText.textContent = 'Copied!';
-          copyCmdBtn.style.color = '#34d399';
+          copyCmdBtn.style.color = '#15803d';
           setTimeout(() => {
             copyBtnText.textContent = 'Copy Command';
             copyCmdBtn.style.color = '';
           }, 2000);
         }).catch(() => {
           copyBtnText.textContent = 'Copied!';
+          copyCmdBtn.style.color = '#15803d';
           setTimeout(() => {
             copyBtnText.textContent = 'Copy Command';
+            copyCmdBtn.style.color = '';
           }, 2000);
         });
       }
