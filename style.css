@@ -459,12 +459,13 @@ a {
 /* Branded Tech Matrix Grid (3 Columns x 2 Rows) */
 .hero-pills-bar {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   grid-template-rows: repeat(2, auto);
   gap: 16px;
   margin: 0 auto 40px;
   width: 100%;
   max-width: 1040px;
+  box-sizing: border-box;
 }
 
 .hero-pill-badge {
@@ -478,6 +479,8 @@ a {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
   transition: all 0.2s var(--ease-smooth);
   text-align: left;
+  min-width: 0;
+  box-sizing: border-box;
 }
 
 .hero-pill-badge:hover {
@@ -1914,28 +1917,42 @@ a {
 
   .hero-meta-row { font-size: 12px; gap: 6px; margin-bottom: 22px; justify-content: center; }
   
-  /* Tech Pills (2 Columns x 3 Rows on Mobile for Clean Legibility) */
+  /* Tech Pills (2 Columns on Tablet / Phablet) */
   .hero-pills-bar {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 8px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
     margin-bottom: 24px;
     width: 100%;
+    box-sizing: border-box;
   }
   .hero-pill-badge {
     font-size: 11px;
-    padding: 10px 8px;
-    gap: 8px;
+    padding: 12px 14px;
+    gap: 10px;
+    min-width: 0;
+    box-sizing: border-box;
   }
   .pill-icon-box {
-    width: 30px;
-    height: 30px;
-    font-size: 14px;
+    width: 32px;
+    height: 32px;
+    font-size: 15px;
+    flex-shrink: 0;
+  }
+  .pill-text-col {
+    min-width: 0;
+    flex: 1;
   }
   .pill-text-col strong {
-    font-size: 12px;
+    font-size: 12.5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   .pill-text-col .pill-sub {
-    font-size: 10px;
+    font-size: 10.5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   /* Terminal Mobile Polish */
@@ -1972,19 +1989,50 @@ a {
   .footer-nav-grid { grid-template-columns: 1fr 1fr; }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 580px) {
+  /* Tech Pills (1 Column on Mobile for Clean Flow & Zero Overflow) */
   .hero-pills-bar {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 5px;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    margin-bottom: 24px;
+    width: 100%;
+    box-sizing: border-box;
   }
   .hero-pill-badge {
-    padding: 6px 3px;
+    padding: 12px 14px;
+    gap: 12px;
+    min-width: 0;
+    border-radius: 10px;
+    box-sizing: border-box;
   }
-  .hero-pill-badge strong {
-    font-size: 10px;
+  .pill-icon-box {
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+    flex-shrink: 0;
   }
-  .hero-pill-badge .pill-sub {
-    font-size: 8.5px;
+  .pill-text-col {
+    min-width: 0;
+    flex: 1;
+  }
+  .pill-text-col strong {
+    font-size: 13.5px;
+    white-space: normal;
+  }
+  .pill-text-col .pill-sub {
+    font-size: 11.5px;
+    white-space: normal;
+    word-break: break-word;
+    line-height: 1.35;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-pills-bar {
+    gap: 8px;
+  }
+  .hero-pill-badge {
+    padding: 10px 12px;
   }
   .terminal-dots { display: none; }
   .terminal-title { max-width: 120px; font-size: 11px; }
